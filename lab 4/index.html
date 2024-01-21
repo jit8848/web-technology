@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Javascript object</title>
+</head>
+
+<body>
+    <div class="blog-card" id="blog1">
+        <img src="images/photo1.jpg" alt="PeacockImage"
+            class="blog-image">
+        <div class="blog-title">Beauty In The Wilderness</div>
+        <div class="blog-author">Author: RIMA RIMAL</div>
+        <div class="blog-info">Date and Time: 2023-09-25 09:10:00</div>
+        <div class="blog-info">Views: <span id="views1">0</span></div>
+        <div class="blog-info">Comments: <span id="comments1">0</span></div>
+        <div class="blog-info">Status: <span id="status1">Drafted</span></div>
+        <button class="status-button" id="status1-btn" onclick="changeStatus('status1')">Publish</button>
+        <button class="status-button" onclick="addComment('comments1')">Add Comment</button>
+        <button class="status-button" onclick="simulateVisit('views1')">Visit</button>
+    </div>
+
+    <div class="blog-card" id="blog2">
+        <img src="images/photo2.webp" alt="Kingofthejungle"
+            class="blog-image">
+        <div class="blog-title">Heart Of THe Jungle</div>
+        <div class="blog-author">Author: SURAJ LAMA</div>
+        <div class="blog-info">Date and Time: 2023-12-01 18:10:00</div>
+        <div class="blog-info">Views: <span id="views2">0</span></div>
+        <div class="blog-info">Comments: <span id="comments2">0</span></div>
+        <div class="blog-info">Status: <span id="status2">Drafted</span></div>
+        <button class="status-button" id="status2-btn" onclick="changeStatus('status2')">Publish</button>
+        <button class="status-button" onclick="addComment('comments2')">Add Comment</button>
+        <button class="status-button" onclick="simulateVisit('views2')">Visit</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
